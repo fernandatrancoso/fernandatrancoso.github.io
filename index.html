@@ -1,49 +1,108 @@
 <!DOCTYPE html>
-<!--In the making! Fernanda Trancoso, 2023
--->
-<html>
-<head><meta name="google-site-verification" content="eup46QkNM1RHoXeE_8Qi1J7l-bgbfuV9-V38kAsVbKs" />
-	<title>Fernanda Trancoso</title></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="eup46QkNM1RHoXeE_8Qi1J7l-bgbfuV9-V38kAsVbKs">
+    <title>Fernanda Trancoso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .sidebar {
+            width: 180px;
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            position: fixed;
+            height: 100%;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+        .content {
+            margin-left: 200px;
+            padding: 20px;
+            max-width: 800px;
+        }
+        .profile-container {
+            display: flex;
+            align-items: center;
+        }
+        .profile-pic {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            <img src="euglossa imperialis 2.jpg">
+            margin-right: 15px;
+        }
+        figure img {
+            width: 100%;
+            max-width: 500px;
+            display: block;
+            margin: 10px auto;
+        }
+    </style>
+</head>
 <body>
-<table style="border:0 ;margin-top:50px;margin-left:auto;margin-right:auto;" border="0" width="90%">
-  <col style="width:30%">
-  <col style="width:60%">
-  <tr>
-    <td style="vertical-align:top">Hi! My name is Fernanda. <br>
-I am a PhD researcher at the Molecular Systems Evolution Group at the Max Planck Institute for Evolutionary Biology. I am interested in evolutionary biology, and my current work aims to infer the rate of evolution of gene expression noise using single-cell transcriptomics data.<br>
-    <b>email:</b> trancoso at evolbio dot mpg dot de </td>
-    <td style="vertical-align:top"><b>Education: </b><br>
-	PhD (ongoing): <a href="https://molsysevol.github.io">Molecular Systems Evolution Group</a> - IMPRS for Evolutionary Biology <br>
-	Masters: Master in Molecular Biology and Evolution (MAMBE) CAU Kiel <br>
-	Bachelors: Biological Sciences at UFMG <br>
-	    <br>
-	<b>Publication</b><s>s</s>: <br>
-	Moutinho, Ana Filipa, Fernanda Fontes Trancoso, and Julien Yann Dutheil. "The impact of protein architecture on adaptive evolution." Molecular biology and evolution 36.9 (2019): 2013-2028. <br>
-  	<br>
-	<b>Photography work featured in publications:</b> <br>
-	Giannini, Tereza Cristina, et al. "Climate change in the Eastern Amazon: crop-pollinator and occurrence-restricted bees are potentially more affected." Regional Environmental Change 20.1 (2020): 9. <br>
-	Borges, Rafael Cabral, et al. "A dataset of multi-functional ecological traits of Brazilian bees." Scientific Data 7.1 (2020): 120. <br>  
-	<br>
-	
-    </td>
-  </tr>
-  
-</table>
-Some pictures I took:
- <figure>
-  <img src="euglossa imperialis.jpg" alt="Euglossa imperialis" style="width:100%">
-</figure> 
-<figure>
-  <img src="bixinho.jpg" alt="lagarto" style="width:100%">
-</figure> 
-<figure>
-  <img src="abelha rainha 2.jpg" alt="esqueci o nome" style="width:100%">
-</figure> 
-<figure>
-  <img src="okokokok.jpg" alt="Escorpioes" style="width:100%">
-</figure> 
-<figure>
-  <img src="euglossa imperialis 2.jpg" alt="Euglossa imperialis" style="width:100%">
-</figure> 
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#publications">Publications</a>
+        <a href="#photography">Photography</a>
+        <a href="#contact">Contact</a>
+    </div>
+    
+    <div class="content">
+        <div class="profile-container">
+            <div class="profile-pic"></div>
+            <h2 id="about">Hi! My name is Fernanda.</h2>
+		<p>I am a PhD researcher at the Molecular Systems Evolution Group at the Max Planck Institute for Evolutionary Biology. I am interested in evolutionary biology, and my current work aims to infer the rate of evolution of gene expression noise using single-cell transcriptomics data.</p>
+        
+        </div>
+        
+        <h3 id="education">Education</h3>
+        <p><b>PhD (ongoing):</b> <a href="https://molsysevol.github.io">Molecular Systems Evolution Group</a> - IMPRS for Evolutionary Biology</p>
+        <p><b>Masters:</b> Molecular Biology and Evolution (MAMBE) CAU Kiel</p>
+        <p><b>Bachelors:</b> Biological Sciences at UFMG</p>
+        
+        <h3 id="publications">Publications</h3>
+        <p>Moutinho, Ana Filipa, Fernanda Fontes Trancoso, and Julien Yann Dutheil. "The impact of protein architecture on adaptive evolution." <i>Molecular biology and evolution</i> 36.9 (2019): 2013-2028.</p>
+        
+        <h3>Photography work featured in publications:</h3>
+        <p>Giannini, Tereza Cristina, et al. "Climate change in the Eastern Amazon: crop-pollinator and occurrence-restricted bees are potentially more affected." <i>Regional Environmental Change</i> 20.1 (2020): 9.</p>
+        <p>Borges, Rafael Cabral, et al. "A dataset of multi-functional ecological traits of Brazilian bees." <i>Scientific Data</i> 7.1 (2020): 120.</p>
+        
+        <h3 id="photography">Some pictures I took:</h3>
+        <figure>
+            <img src="euglossa imperialis.jpg" alt="Euglossa imperialis">
+        </figure>
+        <figure>
+            <img src="bixinho.jpg" alt="Lagarto">
+        </figure>
+        <figure>
+            <img src="abelha rainha 2.jpg" alt="Bee">
+        </figure>
+        <figure>
+            <img src="okokokok.jpg" alt="Scorpions">
+        </figure>
+        <figure>
+            <img src="euglossa imperialis 2.jpg" alt="Euglossa imperialis">
+        </figure>
+        
+        <h3 id="contact">Contact</h3>
+        <p><b>Email:</b> trancoso at evolbio dot mpg dot de</p>
+    </div>
 </body>
 </html>
